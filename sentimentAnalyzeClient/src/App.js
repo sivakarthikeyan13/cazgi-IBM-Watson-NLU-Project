@@ -55,6 +55,9 @@ class App extends React.Component {
         this.setState({sentimentOutput:output});
       })});
   }
+  componentDidMount(){
+      document.title = "Sentiment Analyzer"
+  }
 
   sendForEmotionAnalysis = () => {
 
